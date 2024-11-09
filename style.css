@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background-color: #282b35; */
+    background: #9b59b6;
+}
+
+.container {
+    min-height: 100vh;
+    /* width: 100vw; */
+    padding: 23px;
+}
+
+.header-title {
+    /* width: 100%; */
+    padding: 10px;
+    background-color: rgb(71, 71, 71);
+    color: #F9BD34;
+}
+
+.show-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.show-btn button {
+    padding: 10px 25px;
+}
+
+.saved-notes h1 {
+    margin: 15px;
+    /* color: #f1ecdf90; */
+    color: #282b35;
+    font-size: 35px;
+    text-align: center;
+}
+
+#input-box {
+    border: 1px solid black;
+    padding: 23px;
+    margin: 15px;
+    background-color: #f1ecdf90;
+    border-radius: 10px;
+}
+
+#addTitle {
+    font-weight: bolder;
+    border-bottom: 2px solid #282b35;
+    padding: 5px;
+}
+
+.search-box {
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 500px; */
+    border-radius: 10px;
+    background-color: #f1ecdf90;
+}
+
+.search-box input {
+    margin: 10px;
+    /* width: 500px; */
+    /* color: white; */
+    font-weight: bolder;
+    border-bottom: 2px solid #282b35;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #282b35;
+}
+
+button {
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+}
+
+#addNote,
+.editNote,
+#showFormButton {
+    background: rgb(4, 109, 220);
+    margin: 5px;
+}
+
+.deleteNote {
+    background: rgb(255, 0, 0);
+}
+
+#notes {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 300px;
+    color: #282b35;
+    background-color: #f1ecdf90;
+    overflow-wrap: break-word;
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    .header-title {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    input, textarea {
+        font-size: 20px;
+    }
+
+    #notes {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .note {
+        font-size: 20px;
+        margin: 10px;
+        width: 350px;
+    }
+}
